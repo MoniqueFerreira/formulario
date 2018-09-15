@@ -1,0 +1,69 @@
+body {
+	font-family: calibri;
+	margin-top: 100px;
+
+}	
+h3 {
+	border-style: solid;
+    border-width: 10px;
+    border-bottom-color: #C0C0C0;
+	border-top-color: white;
+	border-left-color: white;
+	border-right-color: white;
+	margin-left: 300px;
+	margin-right: 450px;
+}	
+h5 {
+	font-family: segoe UI light;
+	font-size: 14px;
+}	
+div#site {
+	left: 10px;
+	padding-left: 10px;
+	font-weight: bold;
+	border-color: black;
+	margin-left: 300px;
+	margin-right: 400px;
+	border-style: solid;
+	width: relative;
+}
+div#opcionais {
+	left: 10px;
+	padding-left: 10px;
+	border-color: black;
+	margin-left: 300px;
+	margin-right: 400px;
+	border-style: solid;
+	width: relative;
+}
+div#esp {
+	left: 10px;
+	padding-left: 10px;
+	border-color: black;
+	margin-left: 300px;
+	margin-right: 400px;
+	border-style: solid;
+	width: relative;
+}
+div#obs {
+	background-color: #C0C0C0;
+	margin-right: 400px;
+	margin-left: 300px;
+	font-size: 17px;
+	font-family: arialMT;
+}	
+p {
+text-align: left;
+}
+input {
+	background-color: #C5D7FE;
+}
+textarea {
+	background-color: #C5D7FE;	
+}	
+img {
+    position: absolute;
+    top: 16%; 
+    left: 68%;
+    transform: translate(-50%, -50%);
+}

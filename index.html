@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Formulário_PF</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<img id="logo" src="img/sic.jpg" right="-200">	
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="jq/dist/jquery.mask.js"></script> <!-- O JQ é uma biblioteca do JS, por isso precisa-se inserir o script como JS-->
+	<script type="text/javascript" src="jq/dist/jquery.mask.min.js"></script>
+	<script src="js/arq-js.js"></script>
+</head>
+<body>	
+	<form action="">	
+		<h3>Formulário de solicitação de informação <i>(Pessoa Física)</i></h3>
+	<div id="obs">
+		As informações abaixo são obrigatórias 
+	</div>
+	<div id="site">
+		<table>		
+		<h4>Nome: <input type="text" name="nome" value="" size="105px" pattern="[a-zA-Z\s]+$" required>
+		<p>CPF: &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="CPF" class="CPF" value="" size="30px" required>
+		<h5>Ou, se preferir, informar outro documento de identificação (RG, CNH, Passaporte, RNE ou outro documento válido. Se 
+		a opção for por RG, indicar órgão emissor e UF):</h5>
+		<p>Tipo de documento:&nbsp; <input type="text" name="Tipo de documento" value="" size="45px"> Nº:&nbsp; <input type="text" name="Nº" value="" size="39px" required pattern="[0-9]+$">  
+		<p>Endereço eletrônico (e-mail): <input type="email" name="Endereço eletrônico (e-mail)" value="" size="85px" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"><br> 
+		ou<br>
+		Endereço fisico (Rua, nº, complemento, Bairro): <br><input type="text" name="Endereço fisico (Rua, nº, complemento, Bairro)" value="" size="114px">
+		<p>Cidade: <input type="text" name="Cidade" value="" size="45px"> &nbsp;&nbsp;&nbsp;Estado: <input type="text" size="35px">&nbsp;&nbsp;&nbsp;UF: <input type="text" name="UF" value="" size="2px">
+		<p>CEP:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="CEP" class="CEP" value="" size="38px" required> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;País: <input type="text" name="País" value="" size="55px"><br></h4>
+	</table>
+	</div> 
+	<br>
+	<div id="obs">
+		Os campos a seguir são opcionais e se preenchidos contribuirão para a melhoria de nossos serviços
+	</div>
+	<div id="opcionais">
+		<b><p>Gênero:</b>
+			<input type="radio" name="Gênero" value="masculino">Masculino &nbsp;&nbsp;<input type="radio" name="Gênero" value="feminino">Feminino&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Data de nascimento</b> &nbsp;&nbsp;&nbsp;<input type="date" name="Data de nascimento">
+		<p><b>Escolaridade:</b>
+	<table>		
+		<tr>
+			<td><input type="radio" name="Escolaridade" value="Sem instrução formal">Sem instrução formal</td>
+			<td><input type="radio" name="Escolaridade" value="Ensino Superior">Ensino Superior</td>
+			<td><input type="radio" name="Escolaridade" value="Doutorado">Doutorado</td>
+		</tr>	
+		<tr>
+			<td><input type="radio" name="Escolaridade" value="Ensino Fundamental">Ensino Fundamental</td>
+			<td><input type="radio" name="Escolaridade" value="Especialização">Especialização</td>		
+		</tr>	
+		<tr>
+			<td><input type="radio" name="Escolaridade" value="Ensino Médio">Ensino Médio</td>
+			<td><input type="radio" name="Escolaridade" value="Mestrado">Mestrado</td>		
+		</tr>	
+	</table>
+	<p><b>Ocupação principal / Profissão</p></b>
+	<table>
+		<tr>
+			<td><input type="radio" name="Ocupação principal / Profissão" value="Empregado - setor privado">Empregado - setor privado</td>
+			<td><input type="radio" name="Ocupação principal / Profissão" value="Pesquisador">Pesquisador</td>
+			<td><input type="radio" name="Ocupação principal / Profissão" value="Servidor público estadual">Servidor público estadual</td>
+		</tr>
+		<tr>
+			<td><input type="radio" name="Ocupação principal / Profissão" value="Jornalista">Jornalista</td>
+			<td><input type="radio" name="Ocupação principal / Profissão" value="Professor">Professor</td>
+			<td><input type="radio" name="Ocupação principal / Profissão" value="Servidor Público Municipal">Servidor Público Municipal</td>
+		</tr>
+		<tr>
+			<td><input type="radio" name="Ocupação principal / Profissão" value="Membro de Partido Político">Membro de Partido Político</td>
+			<td><input type="radio" name="Ocupação principal / Profissão" value="Estudante">Estudante</td>
+			<td><input type="radio" name="Ocupação principal / Profissão" value="Membro de ONG nacional">Membro de ONG nacional</td>	
+		</tr>
+		<tr>
+			<td><input type="radio" name="Ocupação principal / Profissão" value="Representante de sindicato">Representante de sindicato</td>
+			<td><input type="radio" name="Ocupação principal / Profissão" value="Empresário/empreendedor">Empresário/empreendedor</td>
+			<td><input type="radio" name="Ocupação principal / Profissão" value="Membro de ONG internacional">Membro de ONG internacional</td>		
+		</tr>
+		<tr>
+			<td><input type="radio" name="Ocupação principal / Profissão" value="Profis. Liberal/autônomo">Profis. Liberal/autônomo</td>
+			<td><input type="radio" name="Ocupação principal / Profissão" value="Servidor público federal">Servidor público federal</td>	
+		</tr>
+		<tr>
+			<td><input type="radio" name="Ocupação principal / Profissão" value="Outras">Outras</td>
+		</tr>
+	</table>		
+		<p><b>Telefone:&nbsp;&nbsp;&nbsp;</b><input type="text" name="Telefone" class="Telefone" value="" size="20px" required></h5></div><br>
+	<div id="obs">	
+		Especificação do pedido de acesso à informação
+	</div>	
+		<div id="esp">
+		<p><b>Órgão/Entidade destinatário do pedido:</b>
+			<input type="text" name="Órgão/Entidade destinatário do pedido" value="" size="114px">
+		<p><b>Forma preferencial de recebimento da resposta</b>
+			<p><input type="radio" name="Forma preferencial de recebimento da resposta" value="Buscar/Consultar pessoalmente">Buscar/Consultar pessoalmente&nbsp;&nbsp;&nbsp;<input type="radio" name="Forma preferencial de recebimento da resposta" value="E-mail">E-mail&nbsp;&nbsp;&nbsp;<input type="radio" name="Forma preferencial de recebimento da resposta" value="Por carta (com custo)">Por carta (com custo)<br>
+		<p><b>Especificação do pedido:</b><br>
+			<textarea name="Especificação do pedido" cols="115" rows="11" required="yes"></textarea><br>
+	</div>	
+	<input type="submit" value="Enviar formulário">
+	</form>
+</body>
+</html>
